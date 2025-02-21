@@ -1,131 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Emilia Mihaela Şandru Comănescu - Full Stack Developer</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emilia Mihaela Șandru Comănescu - Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
-<body>
-  <header class="header">
-    <h1>Emilia Mihaela Şandru Comănescu</h1>
-    <p>Full Stack Developer | Transforming coffee into code since 2019</p>
-  </header>
-
-  <main class="container">
-    <!-- Theme Toggle -->
-    <button id="theme-toggle" class="theme-toggle">
-      <i class="fas fa-moon"></i> Dark Mode
-    </button>
-
-    <!-- Timeline -->
-<div class="timeline">
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <h3>2019</h3>
-        <p>Started my career as a developer</p>
-      </div>
-      <div class="swiper-slide">
-        <h3>2020</h3>
-        <p>Joined Gremlin eCommerce as a Back End Developer</p>
-      </div>
-      <div class="swiper-slide">
-        <h3>2024</h3>
-        <p>Joined Cognizant as a Full Stack Developer</p>
-      </div>
-    </div>
-    <!-- Add pagination dots -->
-    <div class="swiper-pagination"></div>
-  </div>
-  <!-- Progress Bar -->
-  <div class="progress-bar"></div>
-</div>
-
-    <!-- FAQ Section -->
-    <div class="faq">
-      <div class="faq-item">
-        <button onclick="toggleFAQ(0)">
-          <span>What technologies do you use?</span>
-          <i class="fas fa-chevron-down"></i>
-        </button>
-        <p id="faq-0">
-          I use PHP, Drupal 8/10, MySQL, Laravel, Docker, and more.
-        </p>
-      </div>
-      <div class="faq-item">
-        <button onclick="toggleFAQ(1)">
-          <span>Do you freelance?</span>
-          <i class="fas fa-chevron-down"></i>
-        </button>
-        <p id="faq-1">
-          Yes, I’m available for freelance projects.
-        </p>
-      </div>
-    </div>
-
-    <!-- Professional Experience -->
-    <div class="experience">
-      <h2>Professional Experience</h2>
-      <div id="experience-container"></div>
-    </div>
-
-    <!-- Skills -->
-    <div class="skills">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div>PHP</div>
-        <div>Drupal 8/10</div>
-        <div>MySQL</div>
-        <div>Laravel</div>
-        <div>Docker</div>
-        <div>Bash</div>
-        <div>CSS/SCSS</div>
-        <div>Design Patterns</div>
-        <div>OOP</div>
-      </div>
-    </div>
-
-    <!-- Education -->
-    <div class="education">
-      <h2>Education</h2>
-      <div class="education-card">
-        <h3>Bachelor's degree, Informatics</h3>
-        <p>Universitatea "Vasile Alecsandri" din Bacău, Bacău</p>
-        <p>2014 — 2017</p>
-      </div>
-    </div>
-
-    <!-- Contact Form -->
-    <div class="contact">
-      <h2>Contact Me</h2>
-      <form>
-        <div>
-          <label for="name">Name</label>
-          <input type="text" id="name" required />
-        </div>
-        <div>
-          <label for="email">Email</label>
-          <input type="email" id="email" required />
-        </div>
-        <div>
-          <label for="message">Message</label>
-          <textarea id="message" rows="4" required></textarea>
-        </div>
-        <button type="submit">
-          <i class="fas fa-paper-plane"></i> Send Message
-        </button>
-      </form>
-    </div>
-  </main>
-
-  <footer class="footer">
-    <p>&copy; 2023 Emilia Mihaela Şandru Comănescu. All rights reserved.</p>
-  </footer>
-
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="script.js"></script>
+<body class="bg-light">
+    <header class="container py-3 d-flex justify-content-between align-items-center">
+        <h1 class="h3">Emilia Mihaela Șandru Comănescu</h1>
+        <button id="theme-toggle" class="btn btn-dark">Dark Mode</button>
+    </header>
+    <main class="container mt-4">
+        <section class="mb-4">
+            <h2 class="h4">About Me</h2>
+            <p class="lead">Full Stack Developer transforming coffee into code since 2019.</p>
+        </section>
+        <section class="mb-4">
+            <h2 class="h4">Experience</h2>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <strong>Full Stack Developer at Cognizant</strong> (Sep 2024 - Present)
+                    <p>Worked on large-scale projects, implemented customer change requests, and styled components using Drupal 10.</p>
+                </li>
+                <li class="list-group-item">
+                    <strong>Back End Developer at Gremini eCommerce</strong> (May 2020 - Sep 2024)
+                    <p>Integrated 3rd party APIs, developed a FIFO product management system, and handled database migrations.</p>
+                </li>
+                <li class="list-group-item">
+                    <strong>Drupal Developer at Softescu</strong> (Jan 2019 - May 2020)
+                    <p>Worked on site building, custom module development, and frontend tasks with Drupal 8.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="mb-4">
+            <h2 class="h4">Skills</h2>
+            <ul class="list-group">
+                <li class="list-group-item">PHP, OOP, MySQL</li>
+                <li class="list-group-item">Drupal 8/10, Templating, Design Patterns</li>
+                <li class="list-group-item">CSS/SCSS, Bash, Docker</li>
+                <li class="list-group-item">Laravel, ElasticSearch Queries, Rabbit MQ</li>
+            </ul>
+        </section>
+        <section class="mb-4">
+            <h2 class="h4">Education</h2>
+            <p>Bachelor's degree in Informatics, Universitatea "Vasile Alecsandri" din Bacău (2014 - 2017)</p>
+        </section>
+        <section class="mb-4">
+            <h2 class="h4">Contact</h2>
+            <p>Email: <a href="mailto:comanescuemilia@gmail.com">comanescuemilia@gmail.com</a></p>
+            <p>Phone: +40740363325</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/emilia-mihaela-comanescu" target="_blank">Emilia Mihaela Șandru Comănescu</a></p>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
