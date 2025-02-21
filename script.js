@@ -1,6 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
     const themeToggle = document.getElementById("theme-toggle");
     const body = document.body;
+    const carousel = new Swiper("#careerCarousel", {
+        loop: true,
+        navigation: {
+            nextEl: ".carousel-control-next",
+            prevEl: ".carousel-control-prev",
+        },
+        mousewheel: true,
+        keyboard: true,
+    });
 
     // Load saved theme from localStorage
     if (localStorage.getItem("theme") === "dark") {
@@ -20,3 +29,4 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
