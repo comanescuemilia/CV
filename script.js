@@ -52,8 +52,13 @@ professionalExperience.forEach((job) => {
 
 // Initialize Swiper for the timeline
 const swiper = new Swiper('.swiper-container', {
-  spaceBetween: 50,
-  slidesPerView: 1,
+  spaceBetween: 20, // Space between slides
+  slidesPerView: 1, // Number of slides visible at once
+  loop: true, // Enable looping
+  pagination: {
+    el: '.swiper-pagination', // Add pagination dots
+    clickable: true,
+  },
   on: {
     slideChange: () => {
       const progress = (swiper.activeIndex + 1) / swiper.slides.length * 100;
