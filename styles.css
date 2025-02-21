@@ -5,16 +5,25 @@ body {
 }
 
 .dark-mode {
-    background-color: #212529;
-    color: #f8f9fa;
+    background-color: #121212;
+    color: #ffffff;
 }
 
-.btn-dark {
-    background-color: #343a40;
+.dark-mode header,
+.dark-mode .list-group-item {
+    background-color: #1e1e1e;
     color: white;
-    border: none;
 }
 
-.btn-dark:hover {
-    background-color: #495057;
+.dark-mode a {
+    color: #bb86fc;
+}
+
+.dark-mode .btn-dark {
+    background-color: #6200ea;
+    color: white;
+}
+
+.dark-mode .btn-dark:hover {
+    background-color: #3700b3;
 }
